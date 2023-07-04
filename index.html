@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section>
+    <h1>WHAT DOES YOUR NAME SAYS ABOUT YOUR PERSONALITY ?</h1>
+    <div class="centerDiv">
+ <div class="details">
+<label for="">ENTER YOUR GOOD NAME</label><br>
+<input type="text" name=" " id="nameid">
+ </div>
+ <div class="imagediv">
+<img src="img.png" alt="" width="200", height="200" class="imgchange">
+ </div>
+ <button>Click Me</button>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function(){
+      $('button').click(function(){
+        const name = $('#nameid').val( );
+        alert(name);
+        $('.imgchange').attr('src','https://avatars.abstractapi.com/v1/{name}' )
+        const b = $('.imgchane');
+        console.log(b);
+      })
+    })
+  </script>
+</body>
+</html>
